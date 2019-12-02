@@ -40,7 +40,7 @@
   "Lookup details about supported devices this user can access."
   (if (nil? parameters)
       (begin
-        (display (format #f "Status of devices managed by ~a:" (get-current-user-name)))
+        (format #t "Status of devices managed by ~a:" (get-current-user-name))
         (newline))
       ))
 
